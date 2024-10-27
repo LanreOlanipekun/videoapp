@@ -1,50 +1,92 @@
-# React + TypeScript + Vite
+# Video information display application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This application connects to youtube API to display the video details and comments.
 
-Currently, two official plugins are available:
+This project is a React application built with Vite and TypeScript, featuring linting, formatting, and optimized build configurations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## Expanding the ESLint configuration
+- [Installation](#installation)
+- [Available Scripts](#available-scripts)
+- [Project Structure](#project-structure)
+- [Technologies Used](#technologies-used)
+- [License](#license)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/LanreOlanipekun/videoapp
+   cd videoapp
+
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+
+   or
+
+   yarn install
+
+   ```
+
+## Available scripts
+
+1. Development
+
+### Starts the development server with Vite. The app will be accessible at http://localhost:5173
+
+```bash
+npm run dev
+
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Build
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react';
+### Builds the app for production. It first compiles TypeScript (tsc -b) and then bundles the project using Vite.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-});
+```bash
+npm run build
+
+```
+
+3. lint
+
+### Lints all JavaScript, TypeScript, and JSON files in the src directory according to ESLint configurations.
+
+```bash
+npm run lint
+
+```
+
+4. lint
+
+### Automatically fixes any fixable linting issues.
+
+```bash
+npm run lint:fix
+
+```
+
+5. preview
+
+### Previews the production build locally.
+
+```bash
+npm run preview
+
+```
+
+6. Formatting
+
+### Formats all files in the src directory using Prettier to ensure consistent code style.
+
+```bash
+npm run format
+
 ```
