@@ -10,7 +10,6 @@ This project is a React application built with Vite and TypeScript, featuring li
 - [Available Scripts](#available-scripts)
 - [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
-- [License](#license)
 
 ---
 
@@ -90,3 +89,31 @@ npm run preview
 npm run format
 
 ```
+
+## Project struture
+
+## File Structure
+
+- public
+- src
+  - assets
+  - components
+  - Container
+  - hooks
+  - interface
+  - network
+  - routes
+  - Screens
+  - utils
+- App.css
+- APP.tsx
+- index.css
+- main.tsx
+
+## Technology used
+
+- React: A JavaScript library for building user interfaces
+- Vite: A fast development environment and build tool
+- TypeScript: A typed superset of JavaScript
+- ESLint: A static analysis tool to find and fix issues in JavaScript code
+- Prettier: A code formatter for consistent style
