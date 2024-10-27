@@ -1,0 +1,83 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+
+@font-face {
+  font-family: 'Euclid-circular-a';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./assets/fonts/euclid-circular-a/Euclid-Circular-A-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Euclid-circular-a';
+  font-style: medium;
+  font-weight: 500;
+  font-display: swap;
+  src: url(./assets/fonts/euclid-circular-a/Euclid-Circular-A-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Euclid-circular-a-semi-bold';
+  font-style: 'semi-bold';
+  font-weight: 600;
+  font-display: swap;
+  src: url(./assets/fonts/euclid-circular-a/Euclid\ Circular-A-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Euclid-circular-a';
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: url(./assets/fonts/euclid-circular-a/Euclid-Circular-A-Bold.ttf) format('truetype');
+}
+
+
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.button-flex-container {
+  @apply flex items-center justify-center gap-[8px] px-14 py-8 rounded-full border text-gray_700 border-gray-300 bg-white shadow-xs hover:bg-gray_100 hover:shadow-sm active:bg-gray_100 active:text-gray_700 active:shadow-grayButtonFocus disabled:pointer-events-none disabled:text-gray_300 disabled:border-gray_200 font-Euclid;
+}
+
+
+.button-primary-flex-container {
+  @apply flex items-center justify-center gap-[8px] px-14 py-8 rounded-full border text-base_White border-primary_blue_600 bg-primary_blue_600 shadow-xs hover:bg-primary_blue_700 hover:border-primary_blue_700 active:bg-primary_blue_600 active:shadow-inputFocus disabled:pointer-events-none disabled:border-primary_blue_200 disabled:bg-primary_blue_200 font-Euclid;
+}
+
+.button-primary-lg-flex-container {
+  @apply flex items-center justify-center gap-[12px] px-[28px] py-[16px] rounded-full border text-base_White border-primary_blue_600 bg-primary_blue_600 shadow-xs hover:bg-primary_blue_700 hover:border-primary_blue_700 active:bg-primary_blue_600 active:shadow-inputFocus disabled:pointer-events-none disabled:border-primary_blue_200 disabled:bg-primary_blue_200 font-Euclid;
+}
+
+.button-secondary-flex-container {
+  @apply flex items-center justify-center gap-[8px] px-14 py-8 rounded-full border text-primary_blue_700 border-primary_blue_50 bg-primary_blue_50 shadow-xs hover:text-primary_blue_800 hover:bg-primary_blue_100 hover:border-primary_blue_100 active:text-primary_blue_700 active:bg-primary_blue_50 active:shadow-inputFocus disabled:pointer-events-none disabled:text-primary_blue_300 disabled:border-primary_blue_50 disabled:bg-primary_blue_50 font-Euclid;
+}
+
+.button-tertiary-flex-container {
+  @apply flex items-center justify-center gap-[8px] px-14 py-8 rounded-full border text-gray_500 border-none bg-transparent hover:text-gray_600 hover:bg-gray_50 active:text-gray_500 active:bg-transparent disabled:pointer-events-none disabled:bg-transparent disabled:text-gray_300 font-Euclid;
+}
+
+.button-link-flex-container {
+  @apply flex items-center text-primary_blue_700 justify-center gap-[8px] rounded-full hover:text-primary_blue_800 active:text-primary_blue_700 disabled:pointer-events-none disabled:text-primary_blue_300 font-Euclid;
+}
+
+.modal-radius {
+  border-radius: 20px !important;
+}
+
+.hamburger {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #22272F;
+}
