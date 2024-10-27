@@ -23,8 +23,7 @@ jobs:
 
       - name: Build the project
         env:
-          REACT_APP_API_KEY: ${{ secrets.REACT_APP_API_KEY }}
-          REACT_APP_OTHER_VAR: ${{ secrets.REACT_APP_OTHER_VAR }}
+          VITE_API_URL: ${{ secrets.VITE_API_URL }}
         run: npm run build
 
       - name: Deploy to GitHub Pages
