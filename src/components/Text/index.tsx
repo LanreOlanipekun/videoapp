@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 
 interface TextProps {
   size?: 72 | 60 | 48 | 36 | 30 | 24 | 20 | 18 | 16 | 14 | 12;

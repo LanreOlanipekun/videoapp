@@ -1,4 +1,4 @@
-import React, { CSSProperties, FC } from 'react';
+import { CSSProperties, FC } from 'react';
 
 import { Icon, IconProps } from '../Icons';
 import Text from '../Text';
