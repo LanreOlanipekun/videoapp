@@ -34,6 +34,10 @@ This project is a React application built with Vite and TypeScript, featuring li
 
    ```
 
+3. Add environment variable
+
+Add the necessary environment variable in the .env file. Check .env.example
+
 ## Available scripts
 
 1. Development

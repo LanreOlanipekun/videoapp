@@ -15,7 +15,7 @@ export function getError(error: WretchError) {
     const err = exception as Error;
     return {
       code: 'INTERNAL',
-      message: error.response.statusText || err.message,
+      message: error?.response?.statusText || error.message || err.message,
     };
   }
 }
