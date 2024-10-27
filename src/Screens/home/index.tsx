@@ -49,6 +49,7 @@ const Home = () => {
   function handleSearchChange(val: unknown) {
     setId(val as string);
     setPageToken('');
+    setPageTokens([]);
   }
 
   function handleLoadNextComments() {
